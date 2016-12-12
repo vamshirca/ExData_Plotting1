@@ -8,5 +8,5 @@ with(epc_sub, plot(strptime(paste(epc_sub$Date, epc_sub$Time, sep=" "), "%d/%m/%
                    as.numeric(epc_sub$Global_active_power),
                    type="l",
                    xlab="",
-                   ylab="Global Active Power (kilowatts"))
+                   ylab="Global Active Power (kilowatts)"))
 dev.off()
