@@ -1,4 +1,5 @@
 library(data.table)
+library(dplyr)
 epc<-fread("./household_power_consumption.txt")
 epc_sub<-filter(epc, as.Date(epc$Date,format="%d/%m/%Y")>=as.Date("2007-02-01") & as.Date(epc$Date,format="%d/%m/%Y")<=as.Date("2007-02-02"))
 
